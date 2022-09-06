@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/preset.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/medias.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="initial-label">
+    <p>Lançamentos em Praia Grande | Vini Imóveis & Credlar Construtora</p>
+  </div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/brand/Logo Horizontal (PNG) 1logo.svg" alt="logo"
+          height="60" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="w-100 d-sm-flex align-items-center justify-content-between">
+          <span></span>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" onclick="handleSelectLink(this)">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="handleSelectLink(this)">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="handleSelectLink(this)">Fotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="handleSelectLink(this)">Plantas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="handleSelectLink(this)">Preços</a>
+            </li>
+          </ul>
+          <button type="button" class="primary-btn">Contato</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container-fluid p-0">
+      <img src="assets/images/Rectangle 39banner.png" alt="banner" class="img-fluid" />
+    </div>
+
+    <div class="container-fluid form-wrapper">
+      <div class="form-box d-flex flex-column align-items-center justify-content-center py-4">
+        <p class="text-center title mb-4">
+          Receba mais informações de financiamento.
+          <br />
+          <strong class="title"> Preencha o formulário abaixo </strong>
+        </p>
+        <form action="" class="w-75">
+          <div class="row mb-3">
+            <div class="col-sm-12 no-padding">
+              <input type="text" class="form-control form-input w-100" id="nameFormInput" placeholder="Nome Completo" />
+            </div>
+          </div>
+          <div class="row mb-sm-3">
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="email" class="form-control form-input" id="nameFormInput" placeholder="Email" />
+            </div>
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="text" class="form-control form-input" id="nameFormInput" placeholder="Celular" />
+            </div>
+          </div>
+          <div class="row mb-sm-3">
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="text" class="form-control form-input" id="nameFormInput"
+                placeholder="Telefone Residencial" />
+            </div>
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="text" class="form-control form-input" id="nameFormInput" placeholder="Data de Nascimento" />
+            </div>
+          </div>
+          <div class="row mb-sm-3">
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="text" class="form-control form-input" id="nameFormInput" placeholder="Renda Bruta" />
+            </div>
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <input type="text" class="form-control form-input" id="nameFormInput" placeholder="Valor de FGTS" />
+            </div>
+          </div>
+
+          <div class="row mb-sm-3">
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <span>Trabalha como servidor público Estadual ?</span>
+            </div>
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-sm-3">
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <span>Mesmo que tenha sacado, você foi contribuinte do
+                <strong>FGTS a mais de 3 anos?</strong></span>
+            </div>
+            <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center">
+            <button class="primary-btn btn-lg">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+      <h2 class="section-title text-center mb-5">Sobre o empreendimento</h2>
+
+      <div id="slideCarousel1" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slide-images-wrapper d-flex align-items-center justify-content-center">
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 6casa1.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 7casa2.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 8casa3.png" width="300" height="200" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-images-wrapper d-flex align-items-center justify-content-center">
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 6casa-4.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 7casa-5.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 8casa-6.png" width="300" height="200" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slide-images-wrapper d-flex align-items-center justify-content-center">
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 6casa-7.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 7casa-8.png" width="300" height="200" alt="" />
+              </div>
+              <div class="d-inline-block" onmouseenter="handleActiveSlideImg(this)"
+                onmouseleave="handleDeactiveSlideImg(this)">
+                <img src="assets/images/Rectangle 8casa-9.png" width="300" height="200" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slideCarousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slideCarousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <br>
+
+      <h2 class="section-title slide-title my-5">Plantas 3d</h2>
+
+      <div id="slideCarousel2" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="assets/images/PLANTA_3D_LAZER_COBERTURA_RES_ANTONI_GAUDI_CREDLAR_EDI-R02 1planta.png"
+                height="707" width="1000" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="assets/images/PLANTA_3D_LAZER_COBERTURA_RES_ANTONI_GAUDI_CREDLAR_EDI-R02 1planta-2.png"
+                height="707" width="1000" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex align-items-center justify-content-center">
+              <img src="assets/images/PLANTA_3D_LAZER_COBERTURA_RES_ANTONI_GAUDI_CREDLAR_EDI-R02 1planta-3.png"
+                height="707" width="1000" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev plants-carousel" type="button" data-bs-target="#slideCarousel2"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next plants-carousel" type="button" data-bs-target="#slideCarousel2"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col no-padding">
+          <img src="assets/images/Rectangle 38casaben1.png" class="img-fluid h-100 w-100" alt="">
+        </div>
+        <div class="col no-padding d-flex flex-column justify-content-between">
+          <h2 class="section-title text-center">Benefícios</h2>
+          <div class="d-flex align-items-start grey-bg">
+            <div class="d-flex benefits-wrapper flex-column align-items-start w-100 h-100">
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="benefits-circle-item p-1 text-center d-flex align-items-center justify-content-center">
+                  Parceiros de R$ 1.000,00
+                </span>
+                <span class="benefits-circle-item p-1 text-center d-flex align-items-center justify-content-center">
+                  Parceiros de R$ 1.000,00
+                </span>
+                <span class="benefits-circle-item p-1 text-center d-flex align-items-center justify-content-center">
+                  Parceiros de R$ 1.000,00
+                </span>
+              </div>
+              <button class="primary-btn benefits-btn align-self-center">Fechar Negócio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col no-padding">
+          <h2 class="section-title text-center mt-5">Nossa parceria</h2>
+          <br>
+          <p>
+            A Credlar é uma construtora nova e moderna, porém seu diretor acumula mais de décadas na construção civil.
+            Possui um vasto
+            know-how e experiência no ramo, ganhando espaço notável na área de construção civil da Baixada Santista.
+          </p>
+          <p>
+            A construtora Credlar conta com uma equipe qualificada, administrativa e técnica para maior e melhor
+            desenvolvimento de suas atividades.
+          </p>
+          <p>
+            Destaca-se por oferecer projetos diferenciados, pela correta administração dos recursos em suas obras e por
+            operar sobre os alicerces da inteligência construtiva, da solidez e dos bons negócios, visando sempre à
+            plena satisfação de seus clientes. Tem seu foco na redução de custos, inovação e ética. Aposta na internet
+            como uma ferramenta de informação, venda e relacionamento transparente com seus clientes, e por isso
+            disponibiliza, 24 horas por dia, atendimento online transparente e eficaz através do site.
+          </p>
+          <p>
+            Trabalhamos com garantia de qualidade, baseado na melhoria continua e satisfação dos nossos clientes. Por
+            tudo isso, somos sinônimos de excelência, transformando cada projeto em uma história de sucesso.
+          </p>
+        </div>
+        <div class="col no-padding">
+          <img src="assets/images/Rectangle 29casaben2.png" class="img-fluid h-100" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid banner2-bg p-0 py-5 d-flex flex-column align-items-center">
+      <h2 class="section-title text-center">Fluxo de pagamento</h2>
+      <br>
+      <p class="text-center">Temos condições imperdíveis de pagamento para
+        <br>
+        <strong>renda familiar de R$ 2.350,00</strong>
+      </p>
+      <br>
+      <button class="primary-btn">Confira</button>
+    </div>
+
+    <div class="container-fluid px-5">
+      <div class="row">
+        <div class="col no-padding">
+          <h3 class="section-title mt-5">Localização</h3>
+
+          <span class="d-flex align-items-center">
+            <img src="assets/icons/Vectorlocation-icon.svg" class="primary-icon" alt="">
+            <p class="icon-description">
+              Av. Marechal Hermes, 984
+              <br>
+              <strong>Canto Do Forte - Praia Grande, SP</strong>
+            </p>
+          </span>
+
+          <br>
+
+          <p>O empreendimento fica próximo á:</p>
+
+          <br>
+
+          <div class="w-100 w-xl-75 location-reference-icons-wrapper d-flex flex-column align-items-center">
+            <span class="w-100 d-flex align-items-center justify-content-between">
+              <img src="assets/icons/Group 28praia-icon.svg" class="location-reference-icon" alt="">
+              <img src="assets/icons/Group 29estudos-icon.svg" class="location-reference-icon" alt="">
+              <img src="assets/icons/Group 30mercado-icon.svg" class="location-reference-icon" alt="">
+            </span>
+            <span class="w-100 d-flex align-items-center justify-content-between">
+              <img src="assets/icons/Group 31bancos-icon.svg" class="location-reference-icon" alt="">
+              <img src="assets/icons/Group 32shopping-icon 1shopping-icon.svg" class="location-reference-icon" alt="">
+              <img src="assets/icons/Group 33farmacia-icon.svg" class="location-reference-icon" alt="">
+            </span>
+            <br>
+            <button class="primary-btn">Traçar Rota</button>
+          </div>
+        </div>
+        <div class="col no-padding d-flex flex-column align-items-center">
+          <img src="assets/images/Rectangle 24map.png" alt="" class="img-fluid w-100">
+          <button class="whatsapp-btn">
+            <img src="assets/icons/WhatsAppwhatsapp-icon.svg" alt="">
+            Converse com um Corretor
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+   <div class="row footer-row">
+    <div class="col d-flex align-items-center justify-content-center">
+      <img src="assets/brand/Ativo 1 1logo-footer.svg" alt="">
+    </div>
+    <div class="col footer-action">
+      <h4 class="section-title footer-title">
+        Empresas
+      </h4>
+      <ul class="footer-list">
+        <li>Sobre</li>
+        <li>Mapa do site</li>
+      </ul>
+      <br>
+      <h4 class="section-title footer-title">
+        Imóveis na praia grande
+      </h4>
+      <ul class="footer-list">
+        <li>Apartamentos na praia grande</li>
+        <li>Lançamentos na praia grande</li>
+        <li>Construtora na praia grande</li>
+        <li>Casas eu praia grande</li>
+        <li>Locação Definitiva na praia grande</li>
+      </ul>
+      <br>
+      <h4 class="section-title footer-title">
+        Imóveis
+      </h4>
+      <ul class="footer-list">
+        <li>Área Cliente</li>
+        <li>Pesquisa de satisfação</li>
+        <li>Encomenda de imóveis</li>
+        <li>Avalie seu imóvel</li>
+        <li>Cadaste seu imóvel</li>
+      </ul>
+    </div>
+    <div class="col footer-action2">
+
+      <h4 class="section-title footer-title">
+        Atualizações diárias
+      </h4>
+      <div class="row mb-sm-3">
+        <div class="col-sm-6 col-12 no-padding form-column mb-3 m-sm-0">
+          <form class="footer-form"action='/' method='post'>
+            <button class="primary-btn footer-btn">ok</button>
+            <input type="email" class="form-control form-input footer-input" id="nameFormInput" placeholder="Insira seu Email" />
+          </form>
+        </div>
+      </div>
+      <br><br>
+      <h4 class="section-title footer-title">
+        Localização
+      </h4>
+      <ul class="footer-list">
+        <li>Av Jaú, n° 1275 - Boqueirão, SP</li>
+        <li>11700-270</li>
+        <li>CRECI 036345</li>
+        <br>
+        <li>(13) 97422-6004</li>
+        <li>vendas@viniimoveis.com.br</li>
+      </ul>
+      <h4 class="section-title footer-title">
+        Redes Sociais
+      </h4>
+    </div>
+   </div>
+   <div class="d-flex align-items-center justify-content-between">
+    <h3 clss="dev">Desenvolvida por</h3>
+    <img src="assets/images/LOGO_OTIMA_IDEIA_DIGITAL_GROWTH_STRATEGY.png" alt="">
+   </div>
+  </footer>
+</body>
+
+</html>

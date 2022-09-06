@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+button,
+input {
+  border: 0;
+  outline: 0;
+
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+:root {
+  --primary: #9f0707;
+  --light-grey: #efefef;
+  --grey: #d9d9d9;
+  --transparent-grey: rgba(217, 217, 217, 0.36);
+  --dark-grey: #dddbdb;
+  --whatsapp: #40ac44;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("assets/fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: Poppins-Semibold;
+  src: url("assets/fonts/Poppins-Semibold.otf");
+}
+
+@font-face {
+  font-family: Poppins-Light;
+  src: url("assets/fonts/Poppins-Light.otf");
+}

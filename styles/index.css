@@ -1,0 +1,258 @@
+.no-padding {
+  padding: 0 !important;
+}
+
+.primary-btn {
+  width: 175px;
+  height: 49.71px;
+  font-weight: 600;
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.form-box {
+  background: var(--light-grey);
+  position: relative;
+  top: -30px;
+}
+
+.form-input {
+  border-radius: 0;
+  background: var(--grey);
+}
+
+.initial-label {
+  background: var(--dark-grey);
+}
+
+.initial-label > p {
+  font-size: 15px;
+  margin-left: 10vw;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.section-title {
+  font-family: Poppins-Semibold;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.slide-images-wrapper img {
+  cursor: pointer;
+}
+
+.slide-images-wrapper > div + div {
+  margin-left: 40px;
+}
+
+.slide-images-wrapper > div {
+  overflow: hidden;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 80.21px;
+  height: 70.65px;
+  border-radius: 10px;
+  top: 60px;
+  background: var(--primary);
+}
+
+.plants-carousel {
+  top: 350px;
+}
+
+.carousel-control-next {
+  right: 120px;
+} 
+
+.carousel-control-prev {
+  left: 120px;
+}
+
+.slide-img-active::after {
+  content: 'Ampliar';
+  width: 300px;
+  
+  height: 48.06px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  top: 153px;
+  font-family: Poppins-Light;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  background: var(--primary);
+  cursor: pointer;
+
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+}
+
+.zoom-in {
+  animation: zoomIn ease 0.3s forwards;
+  -webkit-animation: zoomIn ease 0.3s forwards;
+  -moz-animation: zoomIn ease 0.3s forwards;
+  -o-animation: zoomIn ease 0.3s forwards;
+  -ms-animation: zoomIn ease 0.3s forwards;
+}
+
+.zoom-out {
+  animation: zoomOut ease 0.3s, zoomIn paused;
+  -webkit-animation: zoomOut ease 0.3s, zoomIn paused;
+  -moz-animation: zoomOut ease 0.3s, zoomIn paused;
+  -o-animation: zoomOut ease 0.3s, zoomIn paused;
+  -ms-animation: zoomOut ease 0.3s, zoomIn paused;
+}
+
+.slide-title {
+  position: relative;
+  margin-left: 12vw;
+  top: 50px;
+  z-index: 3;
+}
+
+.grey-bg {
+  background: var(--grey);
+}
+
+.benefits-circle-item {
+  width: 170px;
+  height: 170px;
+  border: 10px solid white;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+}
+
+.benefits-circle-item + span {
+  margin-left: 40px;
+}
+
+.benefits-wrapper {
+  position: relative;
+  left: -10px;
+  top: -90px;
+}
+
+.benefits-btn {
+  position: relative;
+  top: 35px;
+}
+
+.banner2-bg {
+  background: url('../assets/images/4964089\ 1banner-2.png') no-repeat;
+  background-size: cover;
+}
+
+.primary-icon {
+  height: 50px;
+}
+
+.icon-description {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.whatsapp-btn {
+  width: 308px;
+  height: 80px;
+  font-weight: 600;
+  font-size: 25px;
+  border-radius: 50px;
+  background-color: var(--whatsapp);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+}
+
+.whatsapp-btn > img {
+  position: relative;
+  left: 20px;
+}
+
+.location-reference-icon {
+  height: 150px;
+}
+
+.location-reference-icons-wrapper {
+  padding-right: 30px;
+}
+
+input[type=checkbox]
+{
+  transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.col{
+  margin-top: 60px;
+}
+.footer-title{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+.footer-action{
+  margin-top: 60px;
+}
+.footer-action2{
+  margin-top: 75px;
+}
+.footer-row{
+  background: var(--transparent-grey);
+}
+.footer-list{
+  font-family: Poppins;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+.footer-btn{
+  position: absolute;
+  width: 48px;
+  height: 40.19px;
+  left: 355px;
+}
+.footer-input{
+  width: 372px;
+  height: 40.19px;
+}
+.footer-form{
+  position: relative;
+  width: 376px;
+  height: 40.19px;
+}
+
+.dev{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+
+color: #000000;
+}
